@@ -4,6 +4,7 @@ import Navbar from "./component/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Product from "./component/Product";
 import Layout from "./Layout";
+import { About } from "./component/About";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
             element: <>Product detail</>,
           },
         ],
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
     ],
   },
