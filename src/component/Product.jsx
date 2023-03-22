@@ -11,7 +11,12 @@ export default function Product() {
     const getProducts = async () => {
       setLoading(true);
       const response = await fetch(
-        "https://cors-anywhere.herokuapp.com/https://fakestoreapi.com/products"
+        "https://cors-anywhere.herokuapp.com/https://fakestoreapi.com/products",
+        {
+          method: "post",
+          headers: {},
+          body: {},
+        }
       );
 
       if (componentMounted) {
